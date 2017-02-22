@@ -1,0 +1,47 @@
+
+服务器IP:  45.32.7.137
+端口:  29900
+加速地址: 127.0.0.1:12948
+密码:  #include
+mode:  fast2
+
+当前安装的 Kcptun 版本为: 20170120
+请前往 https://github.com/xtaci/kcptun/releases/tag/v20170120 手动下载客户端文件
+
+可使用的客户端配置文件为:
+{
+    "localaddr": ":12948",
+    "remoteaddr": "45.32.7.137:29900",
+    "key": "#include",
+    "crypt": "aes",
+    "mode": "fast2",
+    "conn": 1,
+    "autoexpire": 60,
+    "mtu": 1350,
+    "sndwnd": 1024,
+    "rcvwnd": 1024,
+    "datashard": 10,
+    "parityshard": 3,
+    "dscp": 0,
+    "nocomp": false,
+    "acknodelay": false,
+    "nodelay": 0,
+    "interval": 20,
+    "resend": 2,
+    "nc": 1,
+    "sockbuf": 4194304,
+    "keepalive": 10
+}
+
+
+手机端参数可以使用:
+-autoexpire 60 -key "#include" -mode "fast2"
+
+各参数详细说明可以查看: https://github.com/xtaci/kcptun
+
+Kcptun 安装目录: /usr/share/kcptun
+Kcptun 日志目录: /var/log/kcptun
+
+已将 Supervisor 加入开机自启, Kcptun 服务端会随 Supervisor 的启动而启动
+
+更多使用说明: ./kcptun.sh help

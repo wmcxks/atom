@@ -1,0 +1,5 @@
+# Moment
+> 轻量级 Javascript 日期处理类库
+
+      moment().format('YYYY-MM-DD HH:mm:ss');
+      moment(1483782884).format('YYYY-MM-DD HH:mm:ss');

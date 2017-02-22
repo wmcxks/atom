@@ -1,0 +1,43 @@
+# String 类
+> java.lang.String类表示字符的字符串.
+
+
+#### contains  方法
+
+> public boolean contains(CharSequence s)
+
+    // 常用图片格式
+    String a = new String("jpg jpeg png JPG png");
+
+    String b = new String("jpg");
+
+    if(a.contains(b)){
+      System.out.println("b is in a");
+    }
+
+* 判断 b 是否为指定图片格式,如果b在a中那么返回 true
+* contains 返回 boolean 值
+
+#### indexOf - lastIndexOf  方法
+
+> 该方法的作用是查找特定字m 符或字符串在当前字符串中的起始位置，如果不存在则返回-1
+
+    String name = new String("This is Markdown.exe");
+    int fs = name.indexOf("s");            // value 3
+    int ls = name.lastIndexOf("s");        // value 6
+
+* indexOf 表示第一次出现的位置
+* lastIndexOf 表示最后一次出现的位置
+
+#### substring  方法
+> 截取 -
+> 该方法的作用是取字符串中的“子串”，所谓“子串”即字符串中的一部分。例如“23”是字符串“123”的子串。
+
+    String name = new String("This is Markdown.exe");
+    int dot = name.lastIndexOf(".");
+    String type = name.substring(dot+1);   // type is "exe"
+    String mark = name.substring(8,16);    // mark is "Markdown"
+
+
+* substring(x)    向后取,从X位取到后面所有字符串
+* substring(x,y)  取 x-y 位 包括左边,不包括右边 类似集合{ [ ) }
