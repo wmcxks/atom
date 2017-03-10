@@ -1,0 +1,7 @@
+## 撤回提交
+
+> git reset --hard HEAD~1
+
+> git push --force
+
+危险！
