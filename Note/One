@@ -1,2 +1,5 @@
-// atom-material-ui
-// atom-beautify
+apm install atom-material-ui
+apm install atom-beautify
+apm install autocomplete-java
+apm install git-control
+apm install Linter
